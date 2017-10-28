@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
 import { RailsComponent } from './rails/rails.component';
 import { RouterModule, Routes } from '@angular/router';
-import { FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,9 +15,8 @@ import { FormBuilder, FormGroup, Validators} from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormBuilder,
-    FormGroup,
-    Validators,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(
       [
         {
